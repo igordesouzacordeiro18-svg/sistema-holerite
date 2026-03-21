@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "nome": "Igor cordeiro",
+        "cargo": "Developer junior",
+        "salario": 3500
+    },
+    {
+        "id": 3,
+        "nome": "Ana Júlia ",
+        "cargo": "Developer Pleno",
+        "salario": 6500
+    },
+    {
+        "id": 4,
+        "nome": "Joana",
+        "cargo": "Gestor de Ti",
+        "salario": 12000
+    },
+    {
+        "id": 5,
+        "nome": "João Marcus",
+        "cargo": "Diretor Geral",
+        "salario": 20000
+    }
+]
