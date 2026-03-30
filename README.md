@@ -1,25 +1,48 @@
-# Sistema de Holerite
+# Sistema de Holerite em Python
 
-Sistema desenvolvido em Python para gerenciamento de funcionários e geração de holerites, incluindo cálculo de salários, descontos e benefícios.
+Sistema desenvolvido em Python para gerenciamento de funcionários e geração de holerites, com integração a banco de dados SQLite e operações CRUD completas.
 
 ---
 
 ## Funcionalidades
 
-- Cadastro de funcionários
-- Listagem de funcionários
-- Busca de funcionário
-- Edição de dados
-- Remoção de funcionário
-- Geração de holerite
-- Cálculo de salário com base no cargo
-- Armazenamento de dados em JSON
+* Cadastro de funcionários
+* Listagem de funcionários
+* Busca por ID
+* Edição de dados
+* Remoção de funcionários
+* Geração de holerite
+* Cálculo automático de:
 
-- ## Tecnologias utilizadas
+  * INSS (8%)
+  * Vale Transporte (6%)
+  * Vale Refeição (fixo)
+  * Armazenamento em banco de dados SQLite
 
-- Python
-- JSON (armazenamento de dados)
+---
 
-## Sobre o projeto
+## Tecnologias utilizadas
 
-Este projeto foi desenvolvido com o objetivo de praticar lógica de programação, manipulação de dados e organização de código em Python, simulando um sistema real de folha de pagamento.
+* Python
+* SQLite
+
+---
+
+##  Estrutura do projeto
+
+* `main.py` → Interface do sistema (menu interativo)
+* `funcionarios.py` → Lógica de CRUD
+* `armazenamento.py` → Conexão e manipulação do banco
+* `holerite.py` → Cálculo e geração do holerite
+
+---
+
+## 🧠 Aprendizados
+
+* Integração com banco de dados (SQLite)
+* Implementação de CRUD completo
+* Organização de código em múltiplos arquivos
+* Tratamento de entrada de usuário
+* Lógica de cálculo de folha de pagamento
+
+
