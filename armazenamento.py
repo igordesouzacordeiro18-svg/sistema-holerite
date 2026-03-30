@@ -1,14 +1,21 @@
-import json
+import sqlite3
 
-ARQUIVO = "funcionarios.json"
+def conectar():
+    return sqlite3.connect("banco.db")
+
 
 def carregar_funcionarios():
-    try:
-        with open(ARQUIVO, 'r') as arquivo:
-            return json.load(arquivo)
-    except (FileNotFoundError, json.JSONDecodeError):
-        return []
+    conexao = conectar()
+    conexao.row_factory = sqlite3.Row
 
-def salvar_funcionarios(funcionarios):
-    with open(ARQUIVO, 'w') as arquivo:
-        json.dump(funcionarios, arquivo, indent=4, ensure_ascii=False)
+    cursor = conexao.cursor()
+    cursor.execute("SELECT * FROM funcionarios")
+    
+    dados = cursor.fetchall()
+
+    funcionarios = [dict(d) for d in dados]
+
+    conexao.close()
+    
+    return funcionarios
+

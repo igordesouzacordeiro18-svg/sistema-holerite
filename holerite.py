@@ -41,7 +41,7 @@ def gerar_holerite():
             print(f'\nSalário bruto: R${salario:.2f}')
 
             print('\nDescontos:\n')
-            print(f'INSS: {inss:.2f}')
+            print(f'INSS: R${inss:.2f}')
             print(f'VT: R${vt:.2f}')
 
             print('\nBenefícios: \n')

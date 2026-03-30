@@ -1,5 +1,5 @@
 from holerite import gerar_holerite
-from funcionarios import cadastrar_funcionario, listar_funcionarios,remover_funcionario, editar_funcionario, buscar_funcionario
+from funcionarios import criar_tabela ,cadastrar_funcionario, listar_funcionarios,remover_funcionario, editar_funcionario, buscar_funcionario
 import os
 
 def limpar():
@@ -8,6 +8,8 @@ def limpar():
 
 def pausar():
         input("\nPressione ENTER para continuar...")
+
+criar_tabela()
 
 while True:
     limpar()
@@ -51,3 +53,4 @@ while True:
 
     else:
         print("Opção inválida")
+        pausar()
